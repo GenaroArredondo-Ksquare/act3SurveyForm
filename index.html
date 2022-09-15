@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<style>
+    body {
+        background-color: burlywood;
+        text-align: center;
+    }
+    .formBody {
+        position:fixed;
+        top: 10%;
+        left: 50%;
+        background-color: aqua;
+        align-content: center;
+    }
+</style>
+<body>
+    <div id="formBody">
+        <h1>Join us at the Ksquare University!</h1>
+        <form>
+            <label for="firstName">First Name:</label>
+            <input id="firstName" type="text" name="Fname"><br><br>
+            <label for="lastName">Last Name:</label>
+            <input id="lastName" type="text" name="Lname"><br><br>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="example@domain.com"><br><br>
+            <label for="phone">Phone Number:</label>
+            <input id="phone" type="number" name="phone"><br><br>
+            <label for="gender">Select your Gender:</label>
+            <div id="radioGroup">
+            <input id="male" type="radio" name="male">
+            <label for="gender">Male</label><br>
+            <input id="female" type="radio" name="female">
+            <label for="gender">Female</label><br>
+            <input id="other" type="radio" name="other">
+            <label for="gender">Other</label><br>
+        </div><br>
+            <label for="country">Select the Country you are currently in:</label><br>
+            <select name="country">
+                <option value="0">Select a Country</option>
+                <option value="1">Mexico</option>
+                <option value="2">Dominican Republic</option> 
+            </select><br><br>
+            <label for="country">Select the career you want to apply for:</label><br>
+            <select name="career">
+                <option value="0">Select a career</option>
+                <option value="1">Javascript</option>
+                <option value="2">Flutter</option>
+                <option value="3">SalesForce Operations</option> 
+            </select><br><br>
+            <div id="radioGroup">
+                <label for="survey">Would you like to fill in another application later?</label><br>
+                <input id="yes" type="radio" name="yes">
+                <label for="gender">Yes</label>
+                <input id="no" type="radio" name="no">
+                <label for="gender">No</label>
+            </div><br><br>
+            <div id="feedback">
+                <label for="feedback">Feel free to leave your feedback for us to improve!</label><br>
+                <textarea name="feedback" id="text-area" cols="30" rows="10" placeholder="Enter your Feedback"></textarea>
+            </div>
+            <input type="submit" value="Save">
+          </form>
+    </div>
+</body>
+</html>
